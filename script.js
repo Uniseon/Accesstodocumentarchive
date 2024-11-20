@@ -16,13 +16,16 @@ function checkGuess() {
   const userValue = Number(guess.value);
   attempts++;
 
+
   if (userValue === firstCode) {
-   hintOne.textContent = "Access Granted.  https://sites.google.com/view/welcometouniseon/accessed-documents-archive";
+   hintOne.textContent = "Access Granted."  
+   location.replace("https://sites.google.com/view/welcometouniseon/accessed-documents-archive");
   } else {
    hintOne.textContent = "Access Denied.";
   }
   if (userValue === secondCode) {
-   hintOne.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
+   hintOne.textContent = "Access Granted.  DO NOT TELL ANYONE."  
+   location.replace("https://sites.google.com/view/welcometouniseon/you-made-it");
   } 
 
 }
