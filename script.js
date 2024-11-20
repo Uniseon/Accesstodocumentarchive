@@ -1,5 +1,6 @@
 let attempts = 0;
 let firstCode = 4703;
+let secondCode = 18525121291514
 
 const guess = document.getElementById("guess");
 
@@ -18,4 +19,11 @@ function checkGuess() {
   } else {
    hint.textContent = "Access Denied.";
   }
+
+  if (userValue === secondCode) {
+   hint.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
+  } else {
+   hint.textContent = "Access Denied.";
+  }
+
 }
