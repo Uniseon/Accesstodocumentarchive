@@ -22,9 +22,7 @@ function checkGuess() {
    hintOne.textContent = "Access Denied.";
   }
   if (userValue === secondCode) {
-   hintTwo.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
-  } else {
-   hintTwo.textContent = "Access Denied.";
-  }
+   hintOne.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
+  } 
 
 }
