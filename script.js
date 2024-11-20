@@ -1,12 +1,14 @@
 let attempts = 0;
 let firstCode = 4703;
-let secondCode = 18525121291514
+let secondCode = 18525121291514;
 
 const guess = document.getElementById("guess");
 
 const enter = document.getElementById("enter");
 
-const hint = document.getElementById("hint");
+const hintOne = document.getElementById("hintOne");
+
+const hintTwo = document.getElementById("hintTwo");
 
 enter.addEventListener("click", checkGuess);
 
@@ -15,15 +17,14 @@ function checkGuess() {
   attempts++;
 
   if (userValue === firstCode) {
-   hint.textContent = "Access Granted.  https://sites.google.com/view/welcometouniseon/accessed-documents-archive";
+   hintOne.textContent = "Access Granted.  https://sites.google.com/view/welcometouniseon/accessed-documents-archive";
   } else {
-   hint.textContent = "Access Denied.";
+   hintOne.textContent = "Access Denied.";
   }
-
   if (userValue === secondCode) {
-   hint.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
+   hintTwo.textContent = "Access Granted.  DO NOT TELL ANYONE.  https://sites.google.com/view/welcometouniseon/you-made-it";
   } else {
-   hint.textContent = "Access Denied.";
+   hintTwo.textContent = "Access Denied.";
   }
 
 }
